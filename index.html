@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">To Do List<h1>
+                <form id="to-do-form">
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="start-date">Start Date</label>
+                        <input type="date" id="start-date" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="end-date">End Date</label>
+                        <input type="date" id="end-date" class="form-control">
+                    </div>
+                    <input type="submit" value="Add Item" class="btn btn-success btn-block">
+                </form>
+                <table class="table table-info mt-5">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="to-do-list"></tbody>
+                </table>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
